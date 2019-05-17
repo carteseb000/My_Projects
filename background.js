@@ -1,7 +1,7 @@
-if(event.keycode == 37) {
+if(event.keyCode == 37) {
    alert('Left was pressed');
-   }
-if(event.keycode == 39)
+   }else
+if(event.keyCode == 39)
    {
    alert('Right was pressed');
    }
