@@ -4,7 +4,7 @@ var context = canvas.getContext("2d");
 var x = 20, y = 20;
 
 function init(){
-context.fillStyle = "red";
+   context.fillStyle = "red";
 }
 
 function move(dx, dy) {
@@ -29,8 +29,7 @@ function main() {
    draw();
 }
 
-window.onload() = function() {
-   main();
+window.onload = function() {
    init();
    setInterval(main,  1000 / 60);
 }
