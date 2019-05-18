@@ -3,15 +3,35 @@ var context = canvas.getContext("2d");
 
 var x = 20, y = 20;
 
+function init(){
+context.fillStyle = "red";
+}
+
 function move(dx, dy) {
    x += dx;
    y += dy;
 }
 
-function main() {
-   context.fillStyle = "red";
-   context.fillRect(x, y, 50, 50);
-   move(3,0);
+function update() {
+   if(key.a) {move(-5, 0);}
+   if(key.d) {move(5 , 0);}
+   if(key.w) {move(0, -5);}
+   if(key.s) {move(0 , 5);}
 }
 
-setInterval(main,  1000 / 60);
+function draw() {
+   context.clearRect(0, 0, canvas.width, canvas.height);
+   context.fillRect(x, y, 50, 50);
+}
+
+function main() {
+   update();
+   draw();
+}
+
+window.onload() = function() {
+   init();
+   setInterval(main,  1000 / 60);
+}
+
+
