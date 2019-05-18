@@ -5,7 +5,7 @@ var key = {
   w: false
 };
 
-window.addListener('keydown', function(event) {
+window.addEventListener('keydown', function(event) {
   switch(event.which || event.keyCode) {
     case 65: key.a = true; break;
     case 68: key.d = true; break;
@@ -14,7 +14,7 @@ window.addListener('keydown', function(event) {
   }
 });
 
-window.addListener('keyup', function(event) {
+window.addEventListener('keyup', function(event) {
   switch(event.which || event.keyCode) {
     case 65: key.a = false; break;
     case 68: key.d = false; break;
