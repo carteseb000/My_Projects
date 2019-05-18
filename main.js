@@ -30,6 +30,7 @@ function main() {
 }
 
 window.onload() = function() {
+   main();
    init();
    setInterval(main,  1000 / 60);
 }
