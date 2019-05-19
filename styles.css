@@ -4,6 +4,13 @@ span.icon a:visited {
     text-indent: -9999px;
 }
 
+span.Character a:link,
+span.Character a:visited {
+    width: 120px;
+    height: 120px;
+    background: url(rpg_sprite_walk.png);
+}
+
 #screen {
     background-color: green;
 }
