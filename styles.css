@@ -1,3 +1,9 @@
+span.icon a:link,
+span.icon a:visited {
+    display: block;
+    text-indent: -9999px;
+}
+
 #screen {
     background-color: green;
 }
