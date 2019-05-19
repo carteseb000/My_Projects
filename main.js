@@ -20,6 +20,7 @@ function update() {
 }
 
 function draw() {
+   context.clearRect(0, 0, canvas.width, canvas.height);
    context.fillRect(x, y, 20, 20);
 }
 
