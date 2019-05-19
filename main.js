@@ -1,11 +1,10 @@
 var canvas = document.getElementById("screen");
 var context = canvas.getContext("2d");
 
-var Character = new image();
-
 var x = 20, y = 20;
 
 function init(){
+   var Character = new image();
    Character.src = "rpg_sprite_walk.png";
    //context.fillStyle = "yellow";
 }
