@@ -1,9 +1,6 @@
 var canvas = document.getElementById("screen");
 var context = canvas.getContext("2d");
 
-var Character = new image();
-character.src = "character.png"
-
 var x = 20, y = 20;
 
 function init(){
@@ -23,7 +20,6 @@ function update() {
 }
 
 function draw() {
-   context.clearRect(0, 0, canvas.width, canvas.height);
    context.fillRect(x, y, 20, 20);
 }
 
