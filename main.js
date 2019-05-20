@@ -4,9 +4,7 @@ var context = canvas.getContext("2d");
 var x = 20, y = 20;
 
 function init(){
-   var Character = new image();
-   Character.src = "rpg_sprite_walk.png";
-   //context.fillStyle = "yellow";
+   context.fillStyle = "yellow";
 }
 
 function move(dx, dy) {
