@@ -4,7 +4,7 @@ var context = canvas.getContext("2d");
 var x = 20, y = 20;
 
 function init(){
-   context.fillStyle = "yellow";
+   context.fillStyle = "white";
 }
 
 function move(dx, dy) {
