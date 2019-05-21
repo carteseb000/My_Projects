@@ -5,16 +5,20 @@ var enemies = context.fillStyle = "red";
 var character = context.fillStyle = "OliveDrab";
 
 var x = 20, y = 20;
-var ex = 50, ey = 50;
+var ex = 100, ey = 20;
 
 function init(){
-   character
-   enemies
+   character;
+   enemies;
 }
 
 function move(dx, dy) {
    x += dx;
    y += dy;
+}
+function AI_move() {
+   ex += dx;
+   ey += dy;
 }
 
 function update() {
