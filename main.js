@@ -3,7 +3,8 @@ var context = canvas.getContext("2d");
 
 var ex = 100, ey = 20;
 
-var Player = function(x,y,size,speed) {
+function init(){
+   var Player = function(x,y,size,speed) {
   this.x = x;
   this.y = y;
   this.size = size; 
@@ -18,9 +19,7 @@ var player = new Player(100,100,9,3);
 draw = function() {
    player.update();
 };
-
-function init(){
-   enemyAI();
+  
 }
 
 function move(dx, dy) {
