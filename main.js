@@ -1,12 +1,15 @@
 var canvas = document.getElementById("screen");
 var context = canvas.getContext("2d");
 
-var enemies = context.fillRect(x, y, 20, 20);
+var enemies = context.fillStyle = "red";
+var character = context.fillStyle = "OliveDrab";
 
 var x = 20, y = 20;
+var ex = 50, ey = 50;
 
 function init(){
-   context.fillStyle = "OliveDrab";
+   character
+   enemies
 }
 
 function move(dx, dy) {
@@ -24,6 +27,7 @@ function update() {
 function draw() {
    context.clearRect(0, 0, canvas.width, canvas.height);
    context.fillRect(x, y, 20, 20);
+   context.fillRect(ex, ey, 20, 20);
 }
 
 function main() {
