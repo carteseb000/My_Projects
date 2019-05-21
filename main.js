@@ -15,8 +15,6 @@ function move(dx, dy) {
    y += dy;
 }
 function enemyAI() {
-   
-   
    ex += ;
    ey += ;
 }
@@ -37,7 +35,6 @@ function draw() {
 function main() {
    update();
    draw();
-   enemy();
 }
 
 window.onload = function() {
