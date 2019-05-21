@@ -1,13 +1,26 @@
 var canvas = document.getElementById("screen");
 var context = canvas.getContext("2d");
 
-var x = 20, y = 20;
 var ex = 100, ey = 20;
 
+var Player = function(x,y,size,speed) {
+  this.x = x;
+  this.y = y;
+  this.size = size; 
+  this.speed = speed;
+   this.update = function() {
+      ellipse(this.x,this.y,this.size,this.size);
+   };
+};
+
+var player = new Player(100,100,9,3);
+
+draw = function() {
+   player.update();
+};
+
 function init(){
-   context.fillStyle = "OliveDrab";
    enemyAI();
-   context.fillStyle = "red";
 }
 
 function move(dx, dy) {
@@ -15,8 +28,7 @@ function move(dx, dy) {
    y += dy;
 }
 function enemyAI() {
-   ex += ;
-   ey += ;
+   
 }
 
 function update() {
