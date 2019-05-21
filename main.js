@@ -7,9 +7,8 @@ var character = context.fillStyle = "OliveDrab";
 var x = 20, y = 20;
 var ex = 100, ey = 20;
 
-function init(){
-   character;
-   enemies;
+function init(character, enemies){
+   
 }
 
 function move(dx, dy) {
