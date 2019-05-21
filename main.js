@@ -1,6 +1,8 @@
 var canvas = document.getElementById("screen");
 var context = canvas.getContext("2d");
 
+var enemies = context.fillRect(x, y, 20, 20);
+
 var x = 20, y = 20;
 
 function init(){
