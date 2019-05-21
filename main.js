@@ -1,23 +1,24 @@
 var canvas = document.getElementById("screen");
 var context = canvas.getContext("2d");
 
-var enemies = context.fillStyle = "red";
-var character = context.fillStyle = "OliveDrab";
-
 var x = 20, y = 20;
 var ex = 100, ey = 20;
 
-function init(character, enemies){
-   
+function init(){
+   context.fillStyle = "OliveDrab";
+   enemyAI();
+   context.fillStyle = "red";
 }
 
 function move(dx, dy) {
    x += dx;
    y += dy;
 }
-function AI_move() {
-   ex += dx;
-   ey += dy;
+function enemyAI() {
+   
+   
+   ex += ;
+   ey += ;
 }
 
 function update() {
@@ -36,6 +37,7 @@ function draw() {
 function main() {
    update();
    draw();
+   enemy();
 }
 
 window.onload = function() {
