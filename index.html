@@ -3,9 +3,35 @@
   <head>
   <title>My top down 2d game</title>
     <link href="styles.css" rel="stylesheet">
+    <style>
+      #hero {
+        background: #ff0000;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+      }
+      
+      
+      
+    </style>
     </head>
   <body>
     <canvas id="screen" width="1800" height="1600"></canvas>
+    <script>
+      
+      
+      var hero = new Object();
+      hero.element = 'hero';
+      
+      function setPosition(sprite) {
+        var e = document.getElementById(sprite.element);
+        e.style.left = sprite.x + 'px';
+        e.style.top = sprite.y + 'px';
+      }
+      
+      setPosition(hero);
+      
+    </script>
     <script src="keys.js"></script>
     <script src="AI.js"></script>
     <script src="main.js"></script>
