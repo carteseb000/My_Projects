@@ -14,9 +14,19 @@ function draw() {
 }
 
 function main() {
-  
+  draw();
+  update();
 }
 
 function AI() {
   
+}
+
+function update() {
+  
+}
+
+window.onload = function() {
+   init();
+   setInterval(main,  1000 / 60);
 }
