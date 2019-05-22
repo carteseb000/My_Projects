@@ -4,9 +4,9 @@ var context = canvas.getContext("2d");
 
 var x = 20, y = 20;
 
-function update() {
-
-  }
+function init() {
+  context.fillstyle = "red";
+}
 
 function draw() {
   context.clearRect(0, 0, canvas.width, canvas.height);
