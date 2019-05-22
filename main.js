@@ -1,5 +1,5 @@
 var canvas = document.getElementById("screen");
-var Enemy  = document.getElementById("");
+var Enemy  = document.getElementById("enemy");
 var context = canvas.getContext("2d");
 
 var x = 20, y = 20;
