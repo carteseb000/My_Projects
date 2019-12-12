@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>amp sim</title>
+	  <script src="https://unpkg.com/tone"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+	  <style>
+		  html,
+		  body {
+			  width: 100%;
+			  height: 100%;
+		  }
+
+		  #editor {
+			  width: 100%;
+			  height: 100%;
+		  }
+
+		  #go {
+			  width: 100px;
+			  height: 30px;
+			  border: 1px solid black;
+			  border-radius: 20px;
+			  text-align: center;
+			  line-height: 30px;
+			  margin: 5px;
+		  }
+
+		  #go:hover {
+			  background-color: #ccc;
+			  cursor: pointer;
+		  }
+	  </style>
+</head>
+
+<body>
+	<button id="go" onclick="go()">play</button>
+    <button id="go" onclick="stop()">stop</button>
+    <div id="go" onclick="micOn()"><span>microphone</span>
+    </div>
+    <div id="editor">//osc.start();
+song1();
+
+function song1() {
+	if([0, 5, 10].indexOf(idx) >= 0) { 
+		p1.get('kick').start();
+	}
+	if([1, 3, 6, 12].indexOf(idx) >= 0) { 
+		p1.get('snare').start();
+	}
+	if([2, 4, 6, 8, 14].indexOf(idx) >= 0) { 
+		p1.get('hh').start();
+	}
+	if([15].indexOf(idx) >= 0) {
+		//seq.stop();
+	}
+}
+</div>
+
+    <script src="scripts/editor.js"></script>
+    <script src="scripts/sound.js"></script>
+  </body>
+</html>

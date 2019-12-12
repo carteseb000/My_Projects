@@ -1,0 +1,35 @@
+#background1 {
+  background-image: url("resources/images/blocks/grass.jpg");
+  background-size: 50%;
+  text-align: center;
+}
+
+#scene1 {
+  background-image: url("resources/images/blocks/grass.jpg");
+}
+
+#pause_menu {
+  background-color: grey;
+  text-align: center;
+}
+
+h1 {
+  color: grey;
+  text-align: center;
+  text-shadow: 1px 1px 1px lightgrey;
+}
+
+a {
+  color: green;
+}
+
+button {
+  background-color: grey;
+  color: darkgreen;
+  border-color: lightgrey;
+  text-shadow: 1px 1px 0px green;
+}
+
+form {
+  text-align: right;
+}
